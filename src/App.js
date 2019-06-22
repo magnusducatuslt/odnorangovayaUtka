@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import Dropzone from './components/Dropzone/Dropzone.js';
+import Annzone from './components/Annzone/Annzone.js';
+
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          <div className="container">1</div>
-        </p>
-      </div>
-    );
-  }
-}
+export default class App extends Component {
+    handleClick() {
 
-export default App;
+    }
+    render() {
+        return(
+            <div className='app-container'>
+                <Dropzone className='dropzone'></Dropzone>
+                <Annzone className='annzone'></Annzone>
+                <button className='submit-button' onClick={this.handleClick}></button>
+            </div>
+        )
+    }
+};
