@@ -7,12 +7,26 @@ body {
   grid-template-columns: 150px 150px;
   grid-gap: 1rem;
   color: #ffffff;
-
+  justify-content: center;
   list-style: none;
-  width: 90vw;
-  height: 85vh;
+  width: 150vh;
+  height: 87vh;
   margin: 4vh auto;
   padding: 1rem;
   overflow: auto;
   counter-reset: item;
+}
+
+.submit-button {
+  margin-left: 50%;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(97deg, #fbd249, #f5a623);;
+  width: 20vh;
+  height: 6vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 34px 0 rgba(246, 174, 42, 0.5);
 }

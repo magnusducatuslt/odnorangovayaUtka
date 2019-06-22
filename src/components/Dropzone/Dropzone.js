@@ -15,10 +15,15 @@ export default class Dropzone extends Component {
     }
     render() {
         return (
-            <>
-                <div>Upload file</div>
-                <div>File annoncement</div>
-            </>
+            <React.Fragment>
+                <div className='upload-zone'>Upload file</div>
+                <div className='file-ann'>
+                    Text for sale
+                    <textarea className='text-for-sale'>
+
+                    </textarea>
+                </div>
+            </React.Fragment>
         )
     }
 };
