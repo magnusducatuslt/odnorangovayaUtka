@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CustomizedSlider from '../Slider/Slider.js';
 export default class PriceZone extends Component {
     render() {
         return(
@@ -20,6 +20,8 @@ export default class PriceZone extends Component {
                     <button className='select-btc'>Fix price in btc</button>
                     <button className='select-usd'>Fix price in usd</button>
                 </div>
+                <p>Count of sales(Zero is an unlimited Sales):</p>
+                <CustomizedSlider></CustomizedSlider>
             </div>
         )
     }
