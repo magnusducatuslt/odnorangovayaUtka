@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UploadFiles from '../UploadFiles/UploadFiles.js';
 import './Dropzone.css';
 
 export default class Dropzone extends Component {
@@ -16,12 +17,10 @@ export default class Dropzone extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className='upload-zone'>Upload file</div>
+                <UploadFiles></UploadFiles>
                 <div className='file-ann'>
                     Text for sale
-                    <textarea className='text-for-sale'>
-
-                    </textarea>
+                    <textarea className='text-for-sale'></textarea>
                 </div>
             </React.Fragment>
         )
